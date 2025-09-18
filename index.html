@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>喵呜之家</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkfNnKx2dP1qj1U9C0p8H1YQd4GdYb6GJ8nG4Z0b8t8a6Y7Y2cE5Y7o2w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="top-hero has-slider" aria-hidden="true">
+      <div class="top-hero-slider">
+        <img class="slide active" src="D:\实验报告合集\基于Web的编程\猫咪网页\mmexport1758195529784.jpg" alt="" />
+        <img class="slide" src="D:\实验报告合集\基于Web的编程\猫咪网页\mmexport1758195534307.jpg" alt="" />
+        <img class="slide" src="D:\实验报告合集\基于Web的编程\猫咪网页\mmexport1758195550567.jpg" alt="" />
+        <img class="slide" src="D:\实验报告合集\基于Web的编程\猫咪网页\mmexport1758195541863.jpg" alt="" />
+        <img class="slide" src="D:\实验报告合集\基于Web的编程\猫咪网页\b90dbb991d5e3c34eaaabfad2865acbe.jpg" alt="" />
+      </div>
+      <div class="top-hero-overlay"></div>
+
+      <header class="site-header">
+        <nav class="floating-nav" aria-label="主导航">
+          <div class="nav-inner">
+            <div class="nav-main">
+              <div class="logo" aria-label="网站Logo">喵呜之家</div>
+              <ul class="nav-list">
+                <li><a class="nav-link" href="#">首页</a></li>
+                <li><a class="nav-link" href="#featured">猫咪图鉴</a></li>
+                <li><a class="nav-link" href="#news-title">最新动态</a></li>
+                <li><a class="nav-link" href="#news">猫猫新闻</a></li>
+                <li><a class="nav-link" href="#cta">科普栏目</a></li>
+                <li><a class="nav-link" href="#cta">关于我们</a></li>
+              </ul>
+            </div>
+            <form class="nav-search" role="search" aria-label="猫猫名字搜索" action="#" onsubmit="return false;">
+              <i class="fa-solid fa-magnifying-glass search-icon" aria-hidden="true"></i>
+              <input type="search" class="search-input" placeholder="搜索猫猫名字..." aria-label="搜索猫猫名字" />
+              <div class="search-results" aria-live="polite"></div>
+            </form>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Top Banner -->
+      <section class="banner" aria-labelledby="banner-title">
+        <div class="banner-inner">
+          <div class="banner-left">
+            <h1 id="banner-title" class="banner-title">喵呜之家 - 关爱校园流浪猫</h1>
+            <a class="button banner-btn" href="#featured">查看全部猫咪</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <main class="site-main" id="main-content">
+
+      <!-- Featured Cats -->
+      <section class="featured" id="featured" aria-labelledby="featured-title">
+        <h2 id="featured-title">猫咪图鉴</h2>
+        <div class="cards">
+          <article class="card">
+            <img class="avatar" src="D:\实验报告合集\基于Web的编程\猫咪网页\fangfang.jpg" alt="猫咪头像 1" width="120" height="120" />
+            <h3 class="name">方方</h3>
+            <p class="location">常出没：斋区</p>
+            <span class="tag">可爱</span>
+          </article>
+          <article class="card">
+            <img class="avatar" src="D:\实验报告合集\基于Web的编程\猫咪网页\fufu.jpg" alt="猫咪头像 2" width="120" height="120" />
+            <h3 class="name">福福</h3>
+            <p class="location">常出没：西南</p>
+            <span class="tag">温顺</span>
+          </article>
+          <article class="card">
+            <img class="avatar" src="D:\实验报告合集\基于Web的编程\猫咪网页\dundun.jpg" alt="猫咪头像 3" width="120" height="120" />
+            <h3 class="name">墩墩</h3>
+            <p class="location">常出没：海滨小区</p>
+            <span class="tag">机灵</span>
+          </article>
+        </div>
+      </section>
+
+      <!-- Stats Board -->
+      <section class="stats" aria-labelledby="stats-title">
+        <h2 id="stats-title" class="sr-only">数据看板</h2>
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="icon" aria-hidden="true">🐱</div>
+            <div class="value">128</div>
+            <div class="label">已登记猫咪（只）</div>
+          </div>
+          <div class="stat">
+            <div class="icon" aria-hidden="true">🏠</div>
+            <div class="value">42</div>
+            <div class="label">成功领养（只）</div>
+          </div>
+          <div class="stat">
+            <div class="icon" aria-hidden="true">✂️</div>
+            <div class="value">86%</div>
+            <div class="label">绝育率</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- News / Announcements -->
+      <section class="news" id="news" aria-labelledby="news-title">
+        <h2 id="news-title">猫猫新闻</h2>
+        <ul class="news-list">
+          <li>
+            <a href="#">九月巡护志愿者报名开启</a>
+            <p class="news-meta">2025-09-01 · 校园西区新增两处投喂点</p>
+          </li>
+          <li>
+            <a href="#">“绝育助力周”圆满结束</a>
+            <p class="news-meta">2025-08-20 · 共完成 12 只猫咪绝育</p>
+          </li>
+          <li>
+            <a href="#">夏季高温防护指南</a>
+            <p class="news-meta">2025-07-05 · 科学喂水与阴凉避暑</p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Call To Action -->
+      <section class="cta" id="cta" aria-labelledby="cta-title">
+        <h2 id="cta-title" class="sr-only">行动号召</h2>
+        <p class="cta-text">想了解更多科学喂养知识？</p>
+        <a class="button" href="#">查看科普</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> 喵呜校园 · 保留所有权利</p>
+    </footer>
+
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <script src="banner-slider.js"></script>
+  </body>
+  </html>
+
+
